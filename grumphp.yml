@@ -1,0 +1,26 @@
+grumphp:
+  tasks:
+    composer: ~
+    composer_normalize: ~
+    eslint: ~
+    phpcs:
+      ignore_patterns:
+        - "web/core/*"
+        - "web/modules/contrib/*"
+        - "web/themes/contrib/*"
+      encoding: utf-8
+      triggered_by:
+        - feature
+        - inc
+        - info
+        - install
+        - module
+        - md
+        - php
+        - profile
+        - theme
+        - test
+        - txt
+      standard: Drupal,DrupalPractice
+    phpstan: ~ 
+    yamllint: ~
